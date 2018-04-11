@@ -17,7 +17,7 @@ class Atbash(Cipher):
         """
         Encrypts the txt by creating a dict where each key is a letter
         of the alphabet & its value its reversed counter part.
-        Example: A:Z, B:Y, & C:X.
+        Ex. A:Z, B:Y, C:X, etc.
 
 
         """
@@ -42,7 +42,7 @@ class Atbash(Cipher):
         Decrypts the txt by creating a dict where each key is a letter
         of the reversed alphabet & its value its standard alphabetical
         counter part.
-        Example: Z:A, Y:B, & X:C.
+        Ex. Z:A, Y:B, X:C, etc.
 
         """
 
