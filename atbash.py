@@ -6,10 +6,21 @@ from ciphers import Cipher
 class Atbash(Cipher):
 
     def __init__(self):
+        """
+        Initializes the Atbash class & creates variables for
+        the alphabet and the alphabet reversed
+        """
         self.alpha = string.ascii_uppercase
         self.reverse_alpha = self.alpha[::-1]
 
     def encrypt(self, txt):
+        """
+        Encrypts the txt by creating a dict where each key is a letter
+        of the alphabet & its value its reversed counter part.
+        Example: A:Z, B:Y, & C:X.
+
+
+        """
 
         txt = txt.upper()
         encrypted_txt = []
@@ -27,6 +38,13 @@ class Atbash(Cipher):
         return "".join(encrypted_txt)
 
     def decrypt(self, txt):
+        """
+        Decrypts the txt by creating a dict where each key is a letter
+        of the reversed alphabet & its value its standard alphabetical
+        counter part.
+        Example: Z:A, Y:B, & X:C.
+
+        """
 
         txt = txt.upper()
         decrypted_txt = []
