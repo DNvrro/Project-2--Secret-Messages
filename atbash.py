@@ -35,7 +35,7 @@ class Atbash(Cipher):
             else:
                 encrypted_txt.append(letter)
 
-        return "".join(encrypted_txt)
+        print("".join(encrypted_txt))
 
     def decrypt(self, txt):
         """
@@ -58,4 +58,4 @@ class Atbash(Cipher):
                 decrypted_txt.append(decrypt[letter])
             else:
                 decrypted_txt.append(letter)
-        return "".join(decrypted_txt)
+        print("".join(decrypted_txt))

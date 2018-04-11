@@ -28,7 +28,7 @@ class Affine(Cipher):
                                            * 3 + 7) % 26 + 65)))
             else:
                 encrypted_txt.append(letter)
-        return "".join(encrypted_txt)
+        print("".join(encrypted_txt))
 
     def decrypt(self, txt):
         """
@@ -49,7 +49,7 @@ class Affine(Cipher):
                                            * 9) % 26 + 65)))
             else:
                 decrypted_txt.append(letter)
-        return "".join(decrypted_txt)
+        print("".join(decrypted_txt))
 
 
 a = Affine()

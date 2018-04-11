@@ -45,7 +45,7 @@ class Keyword(Cipher):
                 encrypted_txt.append(cipher_key[letter])
             else:
                 encrypted_txt.append(letter)
-        return "".join(encrypted_txt)
+        print("".join(encrypted_txt))
 
     def decrypt(self, txt):
         """
@@ -71,5 +71,5 @@ class Keyword(Cipher):
                 decrypted_txt.append(cipher_key[letter])
             else:
                 decrypted_txt.append(letter)
-        return "".join(decrypted_txt)
+        print("".join(decrypted_txt))
 
