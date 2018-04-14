@@ -52,5 +52,4 @@ class Affine(Cipher):
         print("".join(decrypted_txt))
 
 
-a = Affine()
-a.encrypt("Cat")
+
