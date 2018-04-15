@@ -47,7 +47,7 @@ def secret():
 
         message = input("What would you like your message to be? ")
 
-        choice = input("Would you like to encrypt or decrypt a message? ")
+        choice = input("Would you like to encrypt or decrypt a message?")
 
         if choice.lower() == 'encrypt':
             cipher.encrypt(message)
